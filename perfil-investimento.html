@@ -27,70 +27,80 @@
         <section>
             <h1>Perfil de Investidor:</h1>
             <form action="">
-                <h3>Qual o seu objetivo principal ao investir?</h3>
-                <!--Obs.: Coloquei os br pra quebrar linha, porém irei tirar no momento que fizer o css-->
-                <label for="">
-                    <input type="checkbox">
-                    Preservar o Capital <br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Crescer o capital, mas com pouco risco<br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Buscar retornos significativos, mesmo que isso envolva alto risco de perder o dinheiro<br>                
-                </label>
-                <h3>Qual a sua relação emocional a perdas temporárias em seus investimentos?</h3>
-                <label for="">
-                    <input type="checkbox">
-                    Fico muito preocupado e tento vender meus investimentos para evitar perdas<br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Fico desconfortável, mas prefiro esperar para ver como o mercado se comporta<br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Aceito que perdas fazem parte do processo de investimento e continuo mantendo meus investimentos a longo prazo<br>               
-                </label>
-                <h3>Quanto tempo pretendo deixar o dinheiro investido?</h3>
-                <label for="">
-                    <input type="checkbox">
-                    Menos de 1 ano<br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Entre 1 e 5 anos<br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Mais de 5 anos<br>                
-                </label>
-                <h3>Qual seu nível de conhecimento e experiência com investimentos?</h3>
-                <label for="">
-                    <input type="checkbox">
-                    Pouco ou nenhum nível de conhecimento <br> 
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Tenho alguma experiência <br>
-                </label>
-                <label for="">
-                    <input type="checkbox">
-                    Sou investidor experiente
-                </label>
-            </form>
-            <button>OBTER PERFIL</button>
+                    <fieldset>
+                        <legend>Qual o seu objetivo principal ao investir?</legend>
+                        <!--Obs.: Coloquei os br pra quebrar linha, porém irei tirar no momento que fizer o css-->
+                        <label for="">
+                            <input type="radio" name="objetivo">
+                            Preservar o Capital <br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="objetivo">
+                            Crescer o capital, mas com pouco risco<br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="objetivo">
+                            Buscar retornos significativos, mesmo que isso envolva alto risco de perder o dinheiro<br>                
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual a sua relação emocional a perdas temporárias em seus investimentos?</legend>
+                        <label for="">
+                            <input type="radio" name="emocional">
+                            Fico muito preocupado e tento vender meus investimentos para evitar perdas<br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="emocional">
+                            Fico desconfortável, mas prefiro esperar para ver como o mercado se comporta<br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="emocional">
+                            Aceito que perdas fazem parte do processo de investimento e continuo mantendo meus investimentos a longo prazo<br>               
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Quanto tempo pretendo deixar o dinheiro investido?</legend>
+                        <label for="">
+                            <input type="radio" name="tempo-investimento">
+                            Menos de 1 ano<br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="tempo-investimento">
+                            Entre 1 e 5 anos<br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="tempo-investimento">
+                            Mais de 5 anos<br>                
+                        </label>
+                    </fieldset>
+                    <fieldset>
+
+                        <legend>Qual seu nível de conhecimento e experiência com investimentos?</legend>
+                        <label for="">
+                            <input type="radio" name="nivel-conhecimento">
+                            Pouco ou nenhum nível de conhecimento <br> 
+                        </label>
+                        <label for="">
+                            <input type="radio" name="nivel-conhecimento">
+                            Tenho alguma experiência <br>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="nivel-conhecimento">
+                            Sou investidor experiente
+                        </label>
+                    </fieldset>
+                    <button>OBTER PERFIL</button>
+                </form>
         </section>
         <section>
             <h2>Seu perfil de investimento é: <span>Moderado</span></h2>
             <h3>Perfil de investimento Conservador:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, non. Unde, vitae ea molestias fuga deleniti hic dolore alias maiores, neque in voluptatibus minus eligendi! Adipisci pariatur dicta at modi, facilis repudiandae quod nesciunt nisi, dolor quasi corporis expedita ut dolorem veniam soluta aut? In, adipisci aperiam asperiores consectetur numquam ad alias, labore ducimus ipsum dicta praesentium, debitis dolorem! Non quaerat ratione deleniti quidem, expedita reprehenderit laboriosam dignissimos ducimus iure.</p>
+            <p>O <strong>perfil de investimento conservador</strong> é aquele que opta pela segurança do seu capital acima das possibilidades de ganho. É o perfil mais adotado no começo da jornada do investidor. Neste perfil é natural que sua carteira contenha mais ativos de renda fixa, nisso ele será recompensado em um menor risco e um retorno proporcional.
+            Geralmente investidores com perfil conservador dão prioridade a investimentos com liquidez diária ou com curto prazo de vencimento.</p>
             <h3>Perfil de investimento Moderado:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, non. Unde, vitae ea molestias fuga deleniti hic dolore alias maiores, neque in voluptatibus minus eligendi! Adipisci pariatur dicta at modi, facilis repudiandae quod nesciunt nisi, dolor quasi corporis expedita ut dolorem veniam soluta aut? In, adipisci aperiam asperiores consectetur numquam ad alias, labore ducimus ipsum dicta praesentium, debitis dolorem! Non quaerat ratione deleniti quidem, expedita reprehenderit laboriosam dignissimos ducimus iure.</p>
+            <p>O <strong>perfil de investimento moderado</strong> é o meio termo entro o conservador e o agressivo. Ele abre mão da segurança, porém se arrisca em empreitadas mais lucrativas. A diversificação neste perfil é mais abrangente que o conservador quando pensamos nas classes de ativos, assim como no prazo. Investidores com este perfil geralmente investem em titulos atrelados ao IPCA+ ou correções monetárias, mas também buscam em partes investimentos com maior risco e retorno como ações, fundos imobiliários e fundos multimercados</p>
             <h3>Perfil de investimento Agressivo:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, non. Unde, vitae ea molestias fuga deleniti hic dolore alias maiores, neque in voluptatibus minus eligendi! Adipisci pariatur dicta at modi, facilis repudiandae quod nesciunt nisi, dolor quasi corporis expedita ut dolorem veniam soluta aut? In, adipisci aperiam asperiores consectetur numquam ad alias, labore ducimus ipsum dicta praesentium, debitis dolorem! Non quaerat ratione deleniti quidem, expedita reprehenderit laboriosam dignissimos ducimus iure.</p>
+            <p>O <strong>perfil de investimento agressivo</strong> é o investidor que direciona todos os seus esforços em fazer a maior quantidade de dinheiro. Tem baixa aversão ao risco de perda, o que traduz em empreendimentos mais audazes. É um perfil que alinha muito capital e conhecimento, com apetite maior aos riscos. Este investidor também não tem grandes preocupações com a liquidez dos investimentos, tendo uma visão de longo prazo para sua carteira.</p>
         </section>
 
     </main>
