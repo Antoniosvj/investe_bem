@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvesteBem</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/LOGO.svg" alt="InvesteBem">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./artigos.html">Artigos</a></li>
-                <li><a href="./calculadora-financeira.html">Calculadora Financeira</a></li>
-                <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
-				<li><a href="quem-somos.html">Quem Somos</a></li>
-			</ul>
-        </nav>
-        <a href="./login.html">Cadastro/Login</a>
-    </header>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="./assets/LOGO.svg" alt="InvesteBem">
+			</div>
+			<nav class="nav-links">
+				<a href="./index.html">Home</a>
+				<a class="selected" href="./artigos.html">Artigos</a>
+				<a href="./calculadora-financeira.html">Calculadora Financeira</a>
+				<a href="./perfil-investimento.html">Perfil de Investimento</a>
+				<a href="quem-somos.html">Quem Somos</a>
+				<a class="login" href="./login.html">Cadastro/Login</a>
+			</nav>
+		</header>
+	</div>
     <main>
         <section>
             <img src="./assets/LOGO.svg" alt="InvestBem">
             <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
         </section>
 		<section>
-			<h1>Ações</h3>
+			<h2>Ações</h2>
 			<h3>O que é?</h3>
 			<h3>E como começar a investir neste mercado?</h3>
 			<img src="assets/acoes.jpg" alt="Banner-Acoes">
 		</section>
         <section>
-			<h1>Ações</h3>
+			<h1>Ações</h1>
 			<h3>O que é?</h3>
 			<h3>E como começar a investir neste mercado?</h3>
 			<p>
@@ -70,18 +73,23 @@
 			</p>
 		</section>
     </main>
-    <footer>
-		<img src="assets/LOGO.svg" alt="InvestBem">
-		<nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./artigos.html">Artigos</a></li>
-                <li><a href="./calculadora-financeira.html">Calculadora Financeira</a></li>
-                <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
-				<li><a href="quem-somos.html">Quem Somos</a></li>
-			</ul>
-        </nav>
-        <small>Copyright ©2024 InvesteBem. Todos os direitos reservados. </small>
-    </footer>
+	<div class="container-footer">
+		<footer>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="./assets/LOGO.svg" alt="InvesteBem">
+				</div>
+				<nav class="footer-links">
+					<a href="./index.html">Home</a>
+					<a class="selected" href="./artigos.html">Artigos</a>
+					<a href="./calculadora-financeira.html">Calculadora Financeira</a>
+					<a href="./perfil-investimento.html">Perfil de Investimento</a>
+					<a href="quem-somos.html">Quem Somos</a>
+				</nav>
+			</div>
+			<p>Copyright ©2024 InvesteBem. Todos os direitos reservados.</p>
+		</footer>
+	</div>
+
 </body>
 </html>
