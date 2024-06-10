@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="./css/style.css">
+
     <title>InvesteBem - Perfil de Investimento</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/perfil.css">
 
     <!--JS-->
     <script src="./js/perfil-investimento.js" defer></script>
 </head>
 <body>
     <header>
-        <img id="logo" src="./assents/LOGO.svg" alt="InvesteBem">
+        <img id="logo" src="./assets/LOGO.svg" alt="InvesteBem">
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./artigos.html">Artigos</a></li>
                 <li><a href="./calculadora-financeira.html">Calculadora Financeira</a></li>
                 <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
-                <li><a href="./quem-somos.html">Quem Somos</a></li>
-            </ul>
+				<li><a href="quem-somos.html">Quem Somos</a></li>
+			</ul>
         </nav>
-        <button id="btn-login" href="./login.html">Cadastro/Login</button>
+        <a id="btnLogin" href="./login.html">Cadastro/Login</a>
     </header>
     <main>
-        <section>
-            <img src="./assents/LOGO.svg" alt="">
-            <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
+        <section id="containerBanner">
+            <div id="bannerIventeBem">
+                <img src="./assets/LOGO.svg" alt="">
+                <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
+            </div>
         </section>
         <section>
             <h1>Perfil de Investidor:</h1>
@@ -110,17 +117,18 @@
 
     </main>
     <footer>
-        <img src="./assents/LOGO.svg" id="logo" alt="">
-        <nav>
+		<img src="assets/LOGO.svg" alt="InvestBem">
+		<nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./artigos.html">Artigos</a></li>
                 <li><a href="./calculadora-financeira.html">Calculadora Financeira</a></li>
                 <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
-                <li><a href="./quem-somos.html">Quem Somos</a></li>
-            </ul>
+				<li><a href="quem-somos.html">Quem Somos</a></li>
+			</ul>
+            <small>Copyright ©2024 InvesteBem. Todos os direitos reservados. </small>
         </nav>
-        <small>Copyright ©2024 InvesteBem. Todos os direitos reservados. </small>
+        <a id="logoProz" href="https://talentocloud.joyclass.com"><img src="./assets/proz.png" alt=""></a>
     </footer>
 </body>
 </html>
