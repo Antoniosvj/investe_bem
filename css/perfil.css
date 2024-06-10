@@ -1,0 +1,15 @@
+.btn-cinza{
+    background-color: #6e7371;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 40%;
+    -webkit-box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    -moz-box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    &:hover{
+        color: black;
+        background-color: #828382;
+    }
+}
