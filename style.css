@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Sans-Serif;
+    overflow:scroll;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: fit-content;
+	background-image: url("assets/imagem-fundo.svg");
+	background-size: cover;
+}
+
+/*----------------HEADER--------------*/
+.container {
+	width: 100%;
+	margin-top: 0;
+	padding: 0 6em;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 1em;
+	background-color: #6E7371;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	height:70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 60;
+	font-size: 16px;
+}
+
+.logo{
+	display: flex;
+}
+
+.logo img{
+	height: 30px;
+}
+
+/*----------------NAV--------------*/
+
+nav {
+	display:flex;
+	justify-content: space-evenly;
+	width:  100%;
+	align-content: center;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: flex-end;
+	gap: 4em;
+	list-style: none;
+
+}
+
+.nav-links .login {
+	border: 0;
+	margin:1px;
+	background-color:#6E7371;
+	color:#D9B70D;
+}
+
+.nav-links a{
+	margin: 0 10px;
+	text-decoration: none;
+	color:#f4f4f4;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.nav-links a:hover {
+	color:#000;
+	text-decoration: none;
+}
+
+.nav-links .selected {
+	color:#000;
+}
+
+
+/*----------------FOOTER--------------*/
+.container-footer {
+    width: 100%;
+    padding: 0 6em; /* ajuste conforme necessário */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6E7371;
+    color: #f4f4f4;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+	height: 160px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	text-align: center;
+	padding-top: 50px;
+    width: 100%;
+    max-width: 1200px; /* ajuste conforme necessário */
+}
+
+.footer-logo img {
+    height: 35px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+}
+
+/*.footer-links a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-links .selected {
+    color: #000;
+}
+
+footer p {
+    margin-top: 100px;
+}*/
