@@ -1,8 +1,9 @@
-/*importações*/
+/*--------------IMPORTAÇÕES--------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300; 0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*configurações gerais*/
+/*-----------CONFIGURAÇÕES GERAIS---------*/
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: #F5F5F5;
@@ -10,30 +11,12 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
     background: rgb(35,37,38);
     background-image: url("../assets/imagem-fundo.svg");
     background-position: center;
     background-blend-mode: linear-gradient(320deg, rgba(35,37,38,1) 7%, rgba(64,66,68,1) 70%, rgba(65,67,69,1) 100%);
-    margin: 0 7.5%; 
-}
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: #606564;
-    border-radius: 0 0 12px 12px;
-}
-
-section{
-    border: 1px solid #606564;
-    border-radius: 12px;
-    margin: 40px 0;
-    padding: 20px;
+    background-size: cover;
+    margin: 0 8.5%; 
 }
 
 ul{
@@ -41,15 +24,15 @@ ul{
     justify-content: space-between;
     list-style: none;
     justify-content: space-around;
-}
 
-li{
-    padding: 1vw 2vw;
+    & li{
+        padding: 1vw 2vw;
+    }
 }
 
 a{
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     
     &:hover{
         color: black;
@@ -78,50 +61,44 @@ p {
     text-align: justify;
 }
 
-fieldset{
-    border: none;
-    margin:20px 0;
-}
-
 button{
     font-size: 20px; 
 }
 
-footer {
-    bottom: 0;
+/*----------------HEADER--------------*/
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 160px;
+    height: 70px;
     background-color: #606564;
-    border-radius: 12px 12px 0 0;
-
-    & img{
-        width: 20%;
-    }
-
-    & nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px
-    }
+    border-radius: 0 0 12px 12px;
+    padding: 10px;
 }
 
-/*Configurações dos itens para todas as paginas*/
 #logo{
     width: 15vw;
 }
 
 #btnLogin{
-    font-size: 1.4vw;
+    font-size: 1.1vw;
     background-color: #606564;
     color: #D9B70D;
     border: none;
     &:hover{
         opacity: 50%;
     }
+}
+
+/*----------------MAIN--------------*/
+
+section{
+    border: 1px solid #606564;
+    border-radius: 12px;
+    margin: 40px 0;
+    padding: 20px;
 }
 
 #containerBanner{
@@ -151,6 +128,30 @@ footer {
         font-size: 30px;
         width: 35%;
     }
+}
+
+/*----------------FOOTER--------------*/
+#containerFooter{
+
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 82vw;
+    height: 160px;
+    background-color: #606564;
+    border-radius: 12px 12px 0 0;
+
+    & nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px
+    }
+}
+#footerLogo img {
+    height: 35px;
 }
 
 #logoProz{
