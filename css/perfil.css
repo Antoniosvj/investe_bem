@@ -1,3 +1,9 @@
+
+fieldset{
+    border: none;
+    margin:20px 0;
+}
+
 .btn-cinza{
     background-color: #6e7371;
     width: 20%;
