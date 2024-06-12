@@ -40,23 +40,25 @@ a{
 }
 
 h1 {
-    font-size: 50;
+    font-size: 2.8vw;
     font-weight: 900;
     color: #D9B70D;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.4vw;
     font-weight: 300;
 }
 
 h3 {
     color: #d9b70d;
     margin: 30px 0;
+    font-size: 1.6vw;
 }
 
 p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+    line-height: 1.5;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
@@ -94,7 +96,7 @@ header {
 
 /*----------------MAIN--------------*/
 
-section{
+.section{
     border: 1px solid #606564;
     border-radius: 12px;
     margin: 40px 0;
@@ -135,11 +137,12 @@ section{
 
 }
 footer {
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 82vw;
-    height: 160px;
+    height: 205px;
     background-color: #606564;
     border-radius: 12px 12px 0 0;
 
