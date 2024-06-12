@@ -2,8 +2,48 @@
 fieldset{
     border: none;
     margin:20px 0;
+    font-size: 1.4vw;
+    & legend{
+        margin-bottom: 12px;
+    }
+    & label {
+        margin-bottom: 8px;
+    }
 }
 
+/* Aumentar o tamanho e mudar a cor dos botões de rádio */
+input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;   /* Ajuste a largura conforme necessário */
+    height: 20px;  /* Ajuste a altura conforme necessário */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #D9B70D; /* Cor da borda */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 60%; /*tamanho do preenchimento*/
+    height: 60%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked::before {
+    background-color: #D9B70D; /* Cor da bolinha selecionada */
+}
+
+/*estilização do botão*/
 .btn-cinza{
     background-color: #6e7371;
     width: 20%;
@@ -16,6 +56,15 @@ fieldset{
     box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
     &:hover{
         color: black;
-        background-color: #828382;
+        background-color: #D9B70D;
     }
+}
+
+#resultado{
+    color:#D9B70D;
+    font-weight: 900;
+}
+
+p{
+    
 }
