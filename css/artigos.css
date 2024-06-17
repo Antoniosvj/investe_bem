@@ -1,0 +1,113 @@
+/*-----------ARTIGOS-CARROSEL--------------------*/
+.carousel {
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-slide img {
+    object-fit:fill;
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-caption h2{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #D9B70D;
+    padding: 10px;
+}
+
+.carousel-caption h3{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    text-align: left;
+    top: 150px;
+    right: 70px;
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.carousel-nav button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #D9B70D;
+    border: 2px solid #D9B70D;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    pointer-events: all;
+}
+
+.prev {
+    position: absolute;
+    left: 10px;
+}
+
+.next {
+    position: absolute;
+    right: 10px;
+}
+
+#article {
+    text-align: left;
+
+}
+
+#article h1{
+    color:#D9B70D;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+    font-size: 50px;
+}
+
+#article h3{
+    color:white;
+    padding: 10px;
+    margin: 20px;
+    font-size: 32px;
+}
+
+#article ol{
+    margin: 40px ;
+    padding: 10px;
+    font-size: 22px;
+}
+
+#article p{
+    font-size: 22px;
+}
