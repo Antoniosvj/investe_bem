@@ -90,19 +90,19 @@ input[type="radio"]:checked::before {
 }
 
 
-/*----------Telas menores---------*/
-@media screen and(max-width: 1023px) {
+/*----------Telas medias---------*/
+@media screen and (max-width: 1023px) {
     fieldset{
-        font-size: 0.8rem;
-    } 
+        font-size: 1rem;
+        
+    }
     
     input[type="radio"] {
         margin-right: 10px;
-        width: 17px;
-        height: 17px;
+        width: 15px;
+        height: 15px;
     }
     
-    /*estilização do botão*/
     .btn-cinza{
         width: 50%;
         margin-left: 25%;
@@ -110,6 +110,24 @@ input[type="radio"]:checked::before {
     
     #resultado{
         font-weight: 800;
+    }
+}
+
+/*------------Telas Menores---------*/
+@media screen and (max-width: 767px) {
+    fieldset{
+        font-size: 0.8rem;  
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #D9B70D;
+    }
+    .btn-cinza{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 0.8rem;
     }
     
 }
