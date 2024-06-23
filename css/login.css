@@ -1,0 +1,64 @@
+.cadastro-login{
+    display: flex;
+    gap:5%
+}
+article{
+    background-color: #82857f;
+    width: 40%;
+    padding: 20px;
+}
+form {
+    border-radius: 12px;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+
+    & h2{
+        color:#d9b70d;
+    }
+    & label {
+        font-size: 1.5rem;
+    }
+    & input {
+        color:#000;
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+#btn-login{
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+    margin:20px auto;
+    background-color: #5c6060;
+    border-radius: 6px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+    }
+}
+
+/*-----Telas Menores -----*/
+@media screen and (max-width:767px) {
+    .cadastro-login{
+        flex-direction: column;
+        & article{
+            width: 90%;
+        }
+    }
+    form{
+        & label {
+            font-size: 0.8rem;
+        }
+        & input{
+            font-size: 0.8rem;
+        }
+    }
+    #btn-login{
+        font-size: 0.8rem;
+    }
+
+}

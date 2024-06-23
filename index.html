@@ -8,6 +8,7 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
 
   <title>Investe Bem</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
   <header>
     <img id="logo" src="./assets/LOGO.svg" alt="InvesteBem">
-    <nav>
+    <nav id="navbar">
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./artigos.html">Artigos</a></li>
@@ -23,8 +24,9 @@
         <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
         <li><a href="quem-somos.html">Quem Somos</a></li>
       </ul>
+      <a id="btnLogin" href="./login.html">Cadastro/Login</a>
     </nav>
-    <a id="btnLogin" href="./login.html">Cadastro/Login</a>
+    <a id="menu"><img src="./assets/menu.svg" alt=""></a>
   </header>
   <main>
     <section class="section" id="containerBanner">
@@ -33,14 +35,56 @@
         <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
       </div>
     </section>
-    <section class="section">
-      <img src="assets/Comece a Investir2.png" alt="Comece a INVESTIR">
+    <section id="comeceInvestir" class="section">
+      <h2>COMECE A INVESTIR AGORA</h2>
+      <p>Aumente o potencial do seu dinheiro, aqui você aprende a maneira correta de tratar seu dinheiro para que ele
+        trabalhe pra você. </p>
+      <button class="btn-black">SAIBA MAIS</button>
     </section>
-    <section class="section">
-      <img src="assets/Conheça os beneficios.png" alt="beneficios">
-      <ul>
-        <img src="assets/Destaques.png" alt="destaques">
-      </ul>
+    <section id="beneficios" class="section">
+      <h2><strong>Conheça os benefícios</strong> dos diversos ativos de Bolsa e alavanque seus resultados no longo prazo
+      </h2>
+      <div class="beneficio">
+        <div>
+          <h3>Ações</h3>
+          <p>
+            Potencial de crescimento e valorização expressiva no longo prazo, assim como oportunidade de receber
+            dividendos periódicos das empresas.
+          </p>
+        </div>
+        <div>
+          <h3>FIIs</h3>
+          <p>Ganhe renda passiva através de alugueis mensais, enquanto diversifica seus investimentos em imóveis sem a
+            necessidade de comprar um imóvel físico.</p>
+        </div>
+        <div>
+          <h3>CDI</h3>
+          <p>Seus dinheiro rendendo de forma segura e com liquidez diária</p>
+        </div>
+        <button class="btn-black">Cadastre-se e aprenda...</button>
+      </div>
+    </section>
+    <section id="destaques" class="section">
+      <h2>Destaques...</h2>
+      <div id="containerDestaque">
+        <a class="destaque" href="#">
+          <img src="./assets/amico.png" alt="">
+          <h3>Dicas para aumentar a sua renda passiva</h3>
+        </a>
+        <a class="destaque" href="#">
+          <img src="./assets/bro.png" alt="">
+          <h3>Saiba planejar para tirar seus maiores sonhos do papel</h3>
+        </a>
+        <a class="destaque" href="#">
+          <img src="./assets/pana.png" alt="">
+          <h3>Acompanhe as notícias do mercado Financeiro</h3>
+        </a>
+        <a class="destaque" href="#">
+          <img src="./assets/pig.png" alt="">
+          <h3>blablabla blabla</h3>
+        </a>
+      </div>
+    </section>
   </main>
   <footer>
     <div id="footerLogo">
