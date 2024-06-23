@@ -1,64 +1,91 @@
-.cadastro-login{
+.cadastro-login {
     display: flex;
-    gap:5%
+    gap: 5%;
+    justify-content: space-between;
 }
-article{
+
+article {
+    width: 100%;
     background-color: #82857f;
-    width: 40%;
-    padding: 20px;
-}
-form {
+    padding: 2vw;
     border-radius: 12px;
-    gap:10px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-
-    & h2{
-        color:#d9b70d;
-    }
-    & label {
-        font-size: 1.5rem;
-    }
-    & input {
-        color:#000;
-        height: 2rem;
-        font-size: 1.2rem;
-    }
+    gap: 1vw;
 }
 
-#btn-login{
-    width: 250px;
-    height: 30px;
-    font-weight: bold;
-    margin:20px auto;
-    background-color: #5c6060;
-    border-radius: 6px;
+form h2 {
+    color: #D9B70D;
+}
+
+label {
+    font-size: 1.2rem;
+}
+input{
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+.btn{
+    width: 25vw;
+    height: 5vw;
+    margin: 3vw auto;
     border: none;
-    color: #000;
-    cursor: pointer;
+    border-radius: 6px;
+    background-color: #5c6060;
+    color:#000;
+    font-size: 1.2rem;
+    cursor:pointer;
     &:hover{
-        color: #fff;
+        color:#fff;
     }
 }
-
-/*-----Telas Menores -----*/
-@media screen and (max-width:767px) {
-    .cadastro-login{
-        flex-direction: column;
-        & article{
-            width: 90%;
-        }
+/*----------Telas Medias------*/
+@media screen and (max-width:1023px) {
+    form h2{
+        font-size: 1.8rem;
     }
-    form{
-        & label {
-            font-size: 0.8rem;
-        }
-        & input{
-            font-size: 0.8rem;
-        }
-    }
-    #btn-login{
+    label {
         font-size: 0.8rem;
     }
+    input{
+        font-size: 0.8rem;
+        height: 1.5rem;
+    }
+    .btn{
+        width: 20vw;
+        height: 4vw;
+        margin: 3vw auto;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+}
 
+/*--------Telas Menores-----------*/
+@media screen and (max-width:767px) {
+    .cadastro-login {
+        flex-direction: column;
+        padding: 0;
+        gap:3vw;
+        border:none;
+    }
+    article{
+        padding: 3vw;
+    }
+    form{
+        gap:2vw
+    }
+    form h2{
+        font-size: 1.2rem;
+    }
+    .btn{
+        width: 45vw;
+        height: 8vw;
+        margin: 3vw auto;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
 }

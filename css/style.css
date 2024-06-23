@@ -100,7 +100,7 @@ header{
     width: 90%;
     border: 1px solid #606564;
     border-radius: 12px;
-    margin: 40px auto;
+    margin: 40px;
     padding: 20px;
 }
 #containerBanner {
@@ -112,17 +112,16 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 12px;
-    width: 100%;
-    height: 450px;
+    width: 90vw;
+    height: 40vw;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
     & img {
-        width: 80%;
+        width: 50vw;
         margin-top: 70px;
         padding-left: 50px;
-
     }
 
     & h2 {
@@ -171,6 +170,22 @@ footer {
     header{
         width: 100%;
     }
+
+    #bannerIventeBem {
+            
+        & img {
+            width: 40vw;
+            margin-top: 50px;
+        }
+    
+        & h2 {
+            padding-left: 50px;
+            font-size: 1.5rem;
+            width: 50%;
+        }
+    }
+
+
     footer{
         width: 100%;
     }
@@ -227,7 +242,8 @@ footer {
     }
 
     .section {
-        margin: 20px auto;
+        width: 90%;
+        margin: 10px 5%;
         padding: 10px;
     }
     #bannerIventeBem{
