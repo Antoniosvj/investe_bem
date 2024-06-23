@@ -8,6 +8,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
 
     <title>InvesteBem - Perfil de Investimento</title>
 
@@ -16,7 +17,7 @@
 <body>
     <header>
         <img id="logo" src="./assets/LOGO.svg" alt="InvesteBem">
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./artigos.html">Artigos</a></li>
@@ -24,8 +25,9 @@
                 <li><a href="./perfil-investimento.html">Perfil de Investimento</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
             </ul>
+            <a id="btnLogin" href="./login.html">Cadastro/Login</a>
         </nav>
-        <a id="btnLogin" href="./login.html">Cadastro/Login</a>
+        <a id="menu"><img src="./assets/menu.svg" alt=""></a>
     </header>
     <main>
         <section class="section" id="containerBanner">
@@ -34,35 +36,36 @@
                 <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
             </div>
         </section>
-        <section class="section">
-            <form action="">
-                <h2>Login</h2>
-                <label for="nomeLogin">Nome usuário/ email</label>
-                <input type="text" id="nomeLogin" placeholder="Digite seu nome de usuário ou email">
-                <label for="senha">senha</label>
-                <input type="password" id="senha" placeholder="Digite sua senha">
-                <input type="submit" id="btn-login" value="Login">
-            </form>
+        <section class="cadastro-login">
+            <article id="cadastro" class="section">
+                <form action="">
+                    <h2>Primeiro Acesso</h2>
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" id="nomeCompleto" nome="nome" placeholder="Digite seu nome">
+                    <label for="nomeUsuario">Nome usuário</label>
+                    <input type="text" id="nomeUsuario" placeholder="Digite um nome de usuário" required>
+                    <label for="email">Email</label required>
+                    <input type="text" id="email" placeholder="Digite seu email">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="Digite o seu número de telefone">
+                    <label for="senhaCadastro">Senha</label required>
+                    <input type="password" id="senhaCadastro" placeholder="Digite uma senha">
+                    <label for="senhaConfirmacao">Confirme a Senha</label required>
+                    <input type="password" id="senhaConfirmacao" placeholder="Digite a senha novamente" required>
+                    <button id="btn-login">CADASTRAR</button>
+                </form>
+            </article>
+            <article id="login" class="section">
+                <form action="">
+                    <h2>Login</h2>
+                    <label for="nomeLogin">Nome usuário/ email</label>
+                    <input type="text" id="nomeLogin" placeholder="Digite seu nome de usuário ou email">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <Button id="btn-login">LOGIN</Button>
+                </form>
+            </article>
         </section>
-        <section class="section">
-            <h2>Primneiro Acesso</h2>
-            <form action="">
-                <label for="nomeCompleto">Nome Completo</label>
-                <input type="text" id="nomeCompleto" nome="nome" placeholder="Digite seu nome">
-                <label for="nomeUsuario">Nome usuário</label>
-                <input type="text" id="nomeUsuario" placeholder="Digite um nome de usuário" required>
-                <label for="email">Email</label required>
-                <input type="text" id="email" placeholder="Digite seu email">
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" placeholder="Digite o seu número de telefone">
-                <label for="senhaCadastro">Senha</label required>
-                <input type="password" id="senhaCadastro" placeholder="Digite uma senha">
-                <label for="senhaConfirmacao">Confirme a Senha</label required>
-                <input type="password" id="senhaConfirmacao" placeholder="Digite a senha novamente" required>
-                <input type="submit" id="btn-Cadastrar" value="Cadastrar">
-            </form>
-        </section>
-
     </main>
     <footer>
         <div id="footerLogo">

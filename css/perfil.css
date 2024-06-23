@@ -2,7 +2,7 @@
 fieldset{
     border: none;
     margin:20px 0;
-    font-size: 1.4vw;
+    font-size: 1.2rem;
     & legend{
         margin-bottom: 12px;
     }
@@ -14,8 +14,8 @@ fieldset{
 /* Aumentar o tamanho e mudar a cor dos botões de rádio */
 input[type="radio"] {
     margin-right: 10px;
-    width: 20px;   /* Ajuste a largura conforme necessário */
-    height: 20px;  /* Ajuste a altura conforme necessário */
+    width: 20px;   /* Ajuste da largura */
+    height: 20px;  /* Ajuste da altura */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -65,6 +65,51 @@ input[type="radio"]:checked::before {
     font-weight: 900;
 }
 
-p{
+/*----------Telas medias---------*/
+@media screen and(max-width: 1023px) {
+    fieldset{
+        font-size: 1rem;
+    } 
+    
+    input[type="radio"] {
+        margin-right: 10px;
+        width: 17px;
+        height: 17px;
+    }
+    
+    /*estilização do botão*/
+    .btn-cinza{
+        width: 30%;
+        margin-left: 35%;
+    }
+    
+    #resultado{
+        font-weight: 800;
+    }
+    
+}
+
+
+/*----------Telas menores---------*/
+@media screen and(max-width: 1023px) {
+    fieldset{
+        font-size: 0.8rem;
+    } 
+    
+    input[type="radio"] {
+        margin-right: 10px;
+        width: 17px;
+        height: 17px;
+    }
+    
+    /*estilização do botão*/
+    .btn-cinza{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #resultado{
+        font-weight: 800;
+    }
     
 }
