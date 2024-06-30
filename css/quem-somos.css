@@ -43,7 +43,7 @@
 .card img {
     width: 45%;
     height: auto;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 .card h3 b{
     color:#D9B70D;
