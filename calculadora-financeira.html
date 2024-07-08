@@ -8,6 +8,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calculadora-financeira.css">
 
     <title>Calculadora</title>
 </head>
@@ -28,13 +29,15 @@
         <a id="menu"><img src="./assets/menu.svg" alt=""></a>
       </header>
     <main>
+
         <section class="section" id="containerBanner">
             <div id="bannerIventeBem">
-                <img src="./assets/LOGO.svg" alt="">
-                <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
+              <img src="./assets/LOGO.svg" alt="">
+              <h2>Aprenda a investir de acordo com o seu perfil de investidor!</h2>
             </div>
         </section>
-        <section class="section">
+
+        <section class="section" id="CalculeInvestimento">
             <h1>Saiba quanto o seu dinheiro renderia em cada tipo de aplicação:</h1>
             <div>
                 <label for="tempo">Tempo de Investimento (meses):</label>
@@ -50,9 +53,11 @@
                 <label for="mensal">Aporte Mensal (R$):</label>
                 <input type="text" name="mansal" id="mensal" placeholder="Digite o valor que pretende investir por mês">
             </div>
-            <button>Calcular</button>
-            <br>
+
+            <button class="btn-cinza">Calcular</button>
+
             <span><img src="./assets/IMPORTANTE.png" alt="logo InvesteBem"></span>
+
             <div>
                 <div>
                     <h2>POUPANÇA</h2>
@@ -72,6 +77,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     <footer>
         <div id="footerLogo">
