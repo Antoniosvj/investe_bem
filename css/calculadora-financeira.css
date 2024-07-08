@@ -1,0 +1,102 @@
+
+.btn-cinza{
+    display: block;
+    margin: 20px auto;
+    background-color: #6e7371;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 40%;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    -webkit-box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    -moz-box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    box-shadow: -1px 2px 19px 4px rgba(255,255,255,0.2);
+    &:hover{
+        color: black;
+        background-color: #D9B70D;
+    }
+}
+
+#CalculeInvestimento{
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1{
+        display: block;
+        float: right;
+        font-size: 3rem;
+        color: #D9B70D;
+        margin-top: 10px;
+        margin-right: 300px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-weight: 520;
+    }
+    & label{
+        display: block;
+        text-align: center;
+        Font-size: 1.7rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+    }
+    & input{
+        display: block;
+        height: 70px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 500px;
+        padding: 10px;
+        border: 1px solid #000000;
+        font-size: 1.3rem;
+        color: #000000;
+        box-sizing: border-box;
+    }
+}
+
+/*aviso Importante*/
+main section span img {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+/*resultado section*/
+main section div div {
+    display: block;
+    margin-left: none;
+    float: left;
+    padding: 20px;
+    align-items: center;
+}
+
+/*poupança/tesouro/cbd/fundos*/
+main section div div h2 {
+    display: block;
+    margin-right: auto;
+    font-size: 2.8rem;
+    color: #D9B70D;
+    padding: 10px;
+    
+}
+/*resultado*/
+main section div div p {
+    
+    display: block;
+    margin-left: 80px;
+    width: 1000px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    }
+
