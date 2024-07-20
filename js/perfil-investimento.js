@@ -31,18 +31,14 @@ function criarPerfil(){
     
     const titulo = document.createElement("h2");
     titulo.innerHTML = `Seu perfil de investimento é: <span id="resultado">${perfilTitulo}</span>`;
-    
-    const subtitulo = document.createElement("h3");
-    subtitulo.innerText = `Perfil de investimento: ${perfilTitulo}:`;
-    
+    titulo.style.marginBottom = "20px";
+       
     const texto = document.createElement("p");
     texto.innerHTML = `O <strong>perfil de investimento ${perfilTitulo}</strong> ${descricao}`; 
-    
     
     const resultadoSection = document.getElementById("resultado-section");
     resultadoSection.innerHTML = ""; // Limpa qualquer resultado anterior
     resultadoSection.appendChild(titulo);
-    resultadoSection.appendChild(subtitulo);
     resultadoSection.appendChild(texto);
     resultadoSection.style.display = "block"; // Torna a seção visível
 }
