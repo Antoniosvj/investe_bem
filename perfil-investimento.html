@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
-
     <title>InvesteBem - Perfil de Investimento</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/perfil.css">
+
+    <!--JS-->
+    <script src="./js/perfil-investimento.js" defer></script>
 
 </head>
 
@@ -103,31 +103,11 @@
                         Sou investidor experiente
                     </label>
                 </fieldset>
-                <button class="btn-cinza" onclick="MostrarPerfil(event)">OBTER PERFIL</button>
+                <button type="button" class="btn-cinza" onclick="MostrarPerfil()">OBTER PERFIL</button>
             </form>
         </section>
-        <section class="section">
-            <h2>Seu perfil de investimento é: <span id="resultado">Moderado</span></h2>
-            <h3>Perfil de investimento Conservador:</h3>
-            <p>O <strong>perfil de investimento conservador</strong> é aquele que opta pela segurança do seu capital
-                acima das possibilidades de ganho. É o perfil mais adotado no começo da jornada do investidor. Neste
-                perfil é natural que sua carteira contenha mais ativos de renda fixa, nisso ele será recompensado em um
-                menor risco e um retorno proporcional.
-                Geralmente investidores com perfil conservador dão prioridade a investimentos com liquidez diária ou com
-                curto prazo de vencimento.</p>
-            <h3>Perfil de investimento Moderado:</h3>
-            <p>O <strong>perfil de investimento moderado</strong> é o meio termo entro o conservador e o agressivo. Ele
-                abre mão da segurança, porém se arrisca em empreitadas mais lucrativas. A diversificação neste perfil é
-                mais abrangente que o conservador quando pensamos nas classes de ativos, assim como no prazo.
-                Investidores com este perfil geralmente investem em titulos atrelados ao IPCA+ ou correções monetárias,
-                mas também buscam em partes investimentos com maior risco e retorno como ações, fundos imobiliários e
-                fundos multimercados.</p>
-            <h3>Perfil de investimento Agressivo:</h3>
-            <p>O <strong>perfil de investimento agressivo</strong> é o investidor que direciona todos os seus esforços
-                em fazer a maior quantidade de dinheiro. Tem baixa aversão ao risco de perda, o que traduz em
-                empreendimentos mais audazes. É um perfil que alinha muito capital e conhecimento, com apetite maior aos
-                riscos. Este investidor também não tem grandes preocupações com a liquidez dos investimentos, tendo uma
-                visão de longo prazo para sua carteira.</p>
+        <section id="resultado-section" style="display:none;" class="section">
+            <!--resultado perfil aparecerá aqui-->
         </section>
 
     </main>
