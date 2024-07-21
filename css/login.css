@@ -30,6 +30,7 @@ label {
 input{
     font-size: 1.2rem;
     height: 2rem;
+    padding: .5rem;
 }
 
 .btn{
@@ -91,4 +92,16 @@ input{
         border-radius: 4px;
         font-size: 0.8rem;
     }
+}
+
+/*------VALIDAÇÕES------*/
+.correta {
+    border: solid 1px green;
+}
+.erro{
+    border: solid 1px darkred;
+    color: darkred;
+}
+#nome-helper, #email-helper, #senha-cadastro-helper, #confirma-senha-helper, #confirma-login-helper{
+    color: darkred;
 }
