@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/login.css">
 
     <!--JS-->
-    <script src="./js/login.js"></script>
+    <script src="./js/login.js" defer></script>
 
     <title>InvesteBem - Perfil de Investimento</title>
 
@@ -43,31 +43,41 @@
             <article id="cadastro" >
                 <form action="">
                     <h2>Primeiro Acesso</h2>
-                    <label for="nomeCompleto">Nome Completo</label>
-                    <input type="text" id="nomeCompleto" nome="nome" placeholder="Digite seu nome">
-                    <label for="nomeUsuario">Nome usuário</label>
+
+                    <label for="nomeUsuario">Nome Usuário</label>
                     <input type="text" id="nomeUsuario" placeholder="Digite um nome de usuário" required>
+                    <p id="nome-helper"></p>
+
                     <label for="email">Email</label required>
                     <input type="text" id="email" placeholder="Digite seu email">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone" placeholder="Digite o seu número de telefone">
+                    <p id="email-helper"></p>
+
+
                     <label for="senhaCadastro">Senha</label required>
                     <input type="password" id="senhaCadastro" placeholder="Digite uma senha">
+                    <p id="senha-cadastro-helper"></p>
+
+
                     <label for="senhaConfirmacao">Confirme a Senha</label required>
                     <input type="password" id="senhaConfirmacao" placeholder="Digite a senha novamente" required>
-                    <button id="btn-cadastro" class="btn">CADASTRAR</button>
+                    <p id="confirma-senha-helper"></p>
+
+
+                    <button type="button" id="btn-cadastro" class="btn" onclick="cadastrar()">CADASTRAR</button>
                 </form>
             </article>
             <article id="login">
                 <form action="">
                     <h2>Login</h2>
-                    <label for="nomeLogin">Nome usuário/ email</label>
-                    <input type="text" id="nomeLogin" placeholder="Digite seu nome de usuário ou email">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha">
-                    <Button id="btn-login" class="btn">LOGIN</Button>
+                    <label for="nomeLogin">Nome usuário</label>
+                    <input type="text" id="nomeLogin" placeholder="Digite seu nome de usuário">
+                    <label for="senhaLogin">Senha</label>
+                    <input type="password" id="senhaLogin" placeholder="Digite sua senha">
+                    <p id="confirma-login-helper"></p>
+                    <Button type="button" id="btn-login" class="btn" onclick="logar()">LOGIN</Button>
                 </form>
             </article>
+            <article id="mensagem-boa-vinda" style="display: none;"></article>
         </section>
     </main>
     <footer>
