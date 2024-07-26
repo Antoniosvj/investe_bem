@@ -25,7 +25,7 @@ document.querySelector('.btn-cinza').addEventListener('click', function () {
         poupanca: 0.0025,
         tesouro: 0.0033,
         cdb: 0.0035,
-        fundos: 0.004,
+        FIIS: 0.004,
     };
 
     const calculateCompoundInterest = (principal, rate, time, monthly) => {
