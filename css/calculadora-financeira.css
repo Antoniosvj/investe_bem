@@ -1,4 +1,4 @@
-
+/* Estilo para o botão de Calcular */
 .btn-cinza{
     display: block;
     margin: 20px auto;
@@ -72,31 +72,29 @@ main section span img {
     margin-bottom: 20px;
 }
 
-/*resultado section*/
-main section div div {
-    display: block;
-    margin-left: none;
-    float: left;
-    padding: 20px;
-    align-items: center;
-}
-
-/*poupança/tesouro/cbd/fundos*/
-main section div div h2 {
+/* Estilo para os valores de retorno */
+.result h2 {
     display: block;
     margin-right: auto;
     font-size: 2.8rem;
     color: #D9B70D;
     padding: 10px;
-    
+    text-transform: uppercase; 
+    margin-top: 30px; 
+    text-align: left; 
+    font-weight: 500; 
+    margin-bottom: 0px;
 }
-/*resultado*/
-main section div div p {
-    
+
+/* Estilo para os valores de retorno */
+.result p {
     display: block;
     margin-left: 80px;
     width: 1000px;
     font-size: 1.5rem;
     color: #ffffff;
-    }
-
+    margin-top: 5px; 
+    text-align: left; 
+    padding-left: 3em; 
+    font-weight: 0; 
+}
