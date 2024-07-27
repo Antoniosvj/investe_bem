@@ -30,7 +30,7 @@ document.querySelector('.btn-cinza').addEventListener('click', function () {
 
     // Define as taxas de juros para diferentes tipos de investimentos
     const rates = {
-        poupanca: 0.0025,
+        poupança: 0.0025,
         tesouro: 0.0033,
         cdb: 0.0035,
         FIIS: 0.004,
