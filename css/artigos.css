@@ -1,3 +1,321 @@
+/* Importações de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(35, 37, 38);
+    background-image: url("../assets/imagem-fundo.svg");
+    background-position: center;
+    background-blend-mode: linear-gradient(320deg, rgba(35, 37, 38, 1) 7%, rgba(64, 66, 68, 1) 70%, rgba(65, 67, 69, 1) 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F5F5F5;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+ul li {
+    padding: 1vw 2vw;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #F5F5F5;
+}
+
+a:hover {
+    color: black;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #D9B70D;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+h3 {
+    color: #d9b70d;
+    margin: 30px 0;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+button {
+    font-size: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #606564;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 12px 12px;
+    width: 90%;
+    height: 70px;
+    padding: 10px;
+}
+
+#logo {
+    width: 15vw;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#btnLogin {
+    color: #D9B70D;
+    font-size: 1rem;
+}
+
+#btnLogin:hover {
+    opacity: 0.5;
+}
+
+#menu {
+    display: none;
+}
+
+/* Main */
+.section {
+    width: 90%;
+    border: 1px solid #606564;
+    border-radius: 12px;
+    margin: 40px 5%;
+    padding: 20px;
+}
+
+#containerBanner {
+    padding: 0;
+}
+
+#bannerIventeBem {
+    background-image: url("../assets/Business.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & img {
+        width: 50vw;
+        margin-top: 70px;
+        padding-left: 50px;
+    }
+
+    & h2 {
+        padding-left: 70px;
+        font-size: 2rem;
+        width: 35%;
+        color: #fff;
+    }
+}
+
+#bannerIventeBem img {
+    width: 50vw;
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+#bannerIventeBem h2 {
+    padding-left: 70px;
+    font-size: 2rem;
+    width: 35%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: #606564;
+    border-radius: 12px 12px 0 0;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer small {
+    margin-top: 5vw;
+}
+
+#footerLogo img {
+    height: 3vw;
+    margin-left: 5px;
+}
+
+#logoProz {
+    width: 20%;
+    align-items: center;
+}
+
+#logoProz img {
+    width: 80%;
+}
+
+/* Telas Menores */
+@media screen and (max-width: 1023px) {
+    header {
+        width: 100%;
+    }
+
+    #bannerIventeBem img {
+        width: 40vw;
+        margin-top: 50px;
+    }
+
+    #bannerIventeBem h2 {
+        padding-left: 50px;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    a {
+        font-size: 0.6rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    header {
+        width: 100%;
+        height: 35px;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    #menu {
+        background-color: #606564;
+    }
+
+    .section {
+        width: 90%;
+        margin: 10px 5%;
+        padding: 10px;
+    }
+
+    #bannerIventeBem {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #bannerIventeBem img {
+        width: 70%;
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    #bannerIventeBem h2 {
+        padding-left: 20px;
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    footer small {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li a {
+        font-size: 0.6rem;
+    }
+
+    #footerLogo img {
+        height: 4vw;
+    }
+
+    #logoProz {
+        margin-right: 5px;
+        width: 40%;
+    }
+
+    #logoProz img {
+        width: 100%;
+    }
+}
+
+
 /*-----------ARTIGOS-CARROSEL--------------------*/
 .carousel {
     padding: 0;
@@ -17,19 +335,20 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    cursor: pointer;
 }
 
 .carousel-slide img {
-    object-fit:fill;
+    object-fit: cover;
     opacity: 0.6;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.carousel-caption h2{
+.carousel-caption h2 {
     position: absolute;
     top: 30px;
     right: 60px;
@@ -39,7 +358,7 @@
     padding: 10px;
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -84,38 +403,45 @@
     right: 10px;
 }
 
-#article {
-    text-align: left;
-
+.article-section {
+    display: none;
 }
 
-#article h1{
-    color:#D9B70D;
+.article-section.active {
+    display: block;
+}
+
+#article {
+    text-align: left;
+}
+
+#article h1, .article-section h1 {
+    color: #D9B70D;
     text-align: left;
     padding: 10px;
     margin: 20px;
     font-size: 50px;
 }
 
-#article h3{
-    color:white;
+#article h3, .article-section h3 {
+    color: white;
     padding: 10px;
     margin: 20px;
     font-size: 32px;
 }
 
-#article p{
+#article p, .article-section p {
     text-align: left;
     padding: 10px;
     margin: 0 20px;
 }
 
-#article ol{
-    margin: 40px ;
+#article ol, .article-section ol {
+    margin: 40px;
     padding: 10px;
     font-size: 22px;
 }
 
-#article p{
+#article p, .article-section p {
     font-size: 22px;
 }
