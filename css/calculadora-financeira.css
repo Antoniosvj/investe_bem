@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     & h1{
         display: block;
         float: right;
@@ -69,32 +70,32 @@ main section span img {
     display: block;
     margin: 50px auto;
     width: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /* Estilo para os valores de retorno */
 .result h2 {
     display: block;
-    margin-right: auto;
     font-size: 2.8rem;
     color: #D9B70D;
-    padding: 10px;
+    width: 1450px;
+    padding: 5px;
     text-transform: uppercase; 
-    margin-top: 30px; 
-    text-align: left; 
-    font-weight: 500; 
-    margin-bottom: 0px;
+    text-align: left;
+    font-weight: 400; 
+
 }
 
 /* Estilo para os valores de retorno */
 .result p {
     display: block;
-    margin-left: 80px;
+    margin-left: 100px;
+    margin-bottom: 30px;
     width: 1000px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #ffffff;
-    margin-top: 5px; 
     text-align: left; 
-    padding-left: 3em; 
-    font-weight: 0; 
+    padding-left: 4em; 
+    font-weight: 300; 
+    
 }
