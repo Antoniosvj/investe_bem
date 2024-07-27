@@ -5,7 +5,7 @@ main{
 /* Estilo para o botão de Calcular */
 .btn-cinza{
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: #6e7371;
     width: 20%;
     height: 40px;
@@ -13,6 +13,7 @@ main{
     border: none;
     margin-left: 40%;
     margin-top: 50px;
+    margin-bottom: 15px;
     padding: 10px 20px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -31,35 +32,37 @@ main{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
     & h1{
         display: block;
         float: right;
         font-size: 3rem;
         color: #D9B70D;
-        margin-top: 10px;
-        margin-right: 300px;
-        margin-left: 30px;
+        margin-top: 15px;
+        margin-left: 10px;
         margin-bottom: 20px;
         font-weight: 520;
+        letter-spacing: 4px;
     }
     & label{
         display: block;
+        margin: 0 auto;
         text-align: center;
-        Font-size: 1.7rem;
+        Font-size: 1.8rem;
         text-transform: uppercase;
         color: #ffffff;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 7px;
+        font-weight: 330; 
         
     }
     & input{
         display: block;
-        height: 70px;
+        margin: 0 auto; 
+        text-align: center;
+        padding: 10px;
+        height: 75px;
         border-radius: 5px;
         margin-bottom: 20px;
-        text-align: center;
         width: 500px;
         padding: 10px;
         border: 1px solid #000000;
@@ -74,32 +77,30 @@ main section span img {
     display: block;
     margin: 50px auto;
     width: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 /* Estilo para os valores de retorno */
 .result h2 {
     display: block;
+    margin-left: 10px;
     font-size: 2.8rem;
     color: #D9B70D;
-    width: 1450px;
-    padding: 5px;
+    margin-top: 15px;
     text-transform: uppercase; 
     text-align: left;
-    font-weight: 400; 
-
+    font-weight: 700; 
 }
 
 /* Estilo para os valores de retorno */
 .result p {
     display: block;
-    margin-left: 100px;
+    margin-left: 65px;
     margin-bottom: 30px;
-    width: 1000px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: #ffffff;
     text-align: left; 
-    padding-left: 4em; 
-    font-weight: 300; 
-    
+    padding-left: 1em; 
+    font-weight: 400; 
+    letter-spacing: 2px;   
 }
